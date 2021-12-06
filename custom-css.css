@@ -1,991 +1,1071 @@
+/* form */
+.wpforms-field input, textarea{
+	background-color: #fff;
+	border-radius: 5px;
+}
+.wpforms-field{
+	margin-bottom: 10px;
+}
+.wpforms-container .wpforms-field{
+	padding: 0;
+}
+button.wpforms-submit.contact-form-btn-dark {
+	background-color: #0D1732;
+	border-radius: 5px;
+	padding: 8px 20px;
+	color: #fff;
+	text-transform: none;
+		width: 100%;
+}
+
+/* footer top */
+.contact-form-footer-top-gradient{
+	padding: 80px 0;
+	background: rgb(89,100,254);
+	background: linear-gradient(90deg, rgba(89,100,254,1) 0%, rgba(88,29,181,1) 100%);
+}
+
 /* Global */
 html {
-	scroll-behavior: smooth;
-  }
-  
-  /* Typography */
-  /*@font-face {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-style: normal;
-	font-display: swap;
-  }
-  */
-  body{
-	  color: #19254E;
-	  font-size: 16px;
-  }
-  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-	  color: #19254E;
-	  font-weight: 700;
-  }
-  h1{
-	  font-size: 45px;
-  }
-  h2{
-	  font-size: 35px;
-  }
-  h3{
-	  font-size: 30px;
-  }
-  h4{
-	  font-size: 20px;
-  }
-  ul, ol{
-	  font-size: 16px;
-	  color: #344060;
-  }
-  .main-subheader{
-	  font-size: 27px;
-  }
-  .secondary-text{
-	  font-size: 14px;
-  }
-  .team-titles-group{
-	  font-size: 14px;
-  }
-  .team-titles-trust{
-	  font-size: 14px;
-  }
-  .heading-left-line{
-	  border-left: 3px solid #4A51C7; 
-	  padding-left: 20px;
-  }
-  .half-highlight-blue{
-	  background-image: linear-gradient( to bottom,transparent,transparent 68%,rgba(89, 100, 254, .8) 68%,rgba(89, 100, 254, .8) )
-  }
-  .entry-content .list-checkmark li{
-	  margin-left: 0 !important;
-  }
-  .list-checkmark ul{
-	  list-style: none;
-  }
-  .list-checkmark li{
-	  background: url('https://www.irafinancialgroup.com/wp-content/uploads/2020/06/checkmark-blue-0.png') no-repeat 0 5px;
-	  padding-left: 2.5em;
-	  background-size: 17px 17px;
-	  margin: 10px 0;
-  }
-  .list-checkmark-white li{
-		  margin-left: 0 !important;
-  }
-  .list-checkmark-white ul{
-	  list-style: none;
-  }
-  .list-checkmark-white li{
-	  background: url('https://www.irafinancialgroup.com/wp-content/uploads/2021/04/checkmark-white.png') no-repeat 0 5px;
-	  padding-left: 2.5em;
-	  background-size: 18px 18px;
-	  margin: 10px 0;
-  }
-  #services-list ul{
-	  list-style: none;
-  }
-  #services-list li{
-	  background: url('https://www.irafinancialgroup.com/wp-content/uploads/2019/05/checkmark-0.png') no-repeat 0 5px;
-	  padding-left: 2.5em;
-	  background-size: 20px 20px;
-	  margin: 15px 0;
-  }
-  
-  /* Links & Buttons */
-  a{
-	  color: #5964fe;
-  }
-  a:hover{
-	  color: #2C338D;
-  }
-  .ow-button-base a{
-	  font-size: 1em !important;
-	  border: none;
-  }
-  .a-button{
-	  color: #fff;
-	  border-radius: 30px;
-	  padding: 10px 40px;
-	  background-color: #5964fe;
-	  font-weight: 700;
-	  border: none;
-  }
-  .a-button:hover{
-	  color: #fff;
-	  background-color: #2C338D;
-	  border: none;
-  }
-  .a-button:visited, .a-button-1:visited{
-	  color: #fff;
-  }
-  .learn-link{
-	  font-size: 28px;
-  }
-  .learn-link a{
-	  color: #252636;
-  }
-  .learn-link a:hover{
-	  color: #4A51C7;
-  }
-  .self-directed-solutions-tab :focus {
-  outline: none;
-  }
-  
-  /* ====== Cover Pages ====== */
-  .cover_page{
-	  padding-top: 30px;
-	  padding-bottom: 10px;
-	  background-color: #0E1730;
-	  color: #FFFFFF;	
-  }
-  
-  .cover_page .cover_page__title {
-	  color: #FFFFFF;
-  }
-  
-  .cover_page .cover_page__subtitle {
-	  font-size: 27px;	
-  }
-  
-  .cover_page .cover_page__illustration {
-		  text-align: center;	
-  }
-  .cover_page .cover_page__illustration.our_team {
-	  width: 370px;	
-  }
-  
-  /* ====== Navigation & Footer ====== */
-  /* --- Navigation --- */
-  .dark-mode .item--html a {
-	  font-size: 16px;
-	  color: #fff;
-	  font-weight: 700;
-  }
-  #header-menu-sidebar-bg .login-link{
-	  font-weight: 700;
-  }
-  .nav-pricing a{
-	  color: #5CD984 !important;
-  }
-  
-  .site-header .site-branding img {
-	  width: 95px;
-	  height: 36px;
-  }
-  /* --- Footer --- */
-  .footer-top textarea{
-	  margin-bottom: 18px !important;
-  }
-  #cb-row--footer-top .footer--row-inner{
-	  padding: 80px 0 80px 0;
-	  background: linear-gradient(90deg, rgba(89,100,254,1) 3%, rgba(88,29,181,1) 100%);
-  }
-  #cb-row--footer-main .footer--row-inner{
-	  padding-top: 4em;
-	  background: #0D1732;
-  }
-  #cb-row--footer-main p, #cb-row--footer-main a{
-	  font-size: 15px;
-	  color: #fff;
-  }
-  #cb-row--footer-bottom .footer-bottom-inner{
-	  background-color: #0D1732;
-	  font-size: 15px;
-	  color: #fff;
-  }
-  footer h4{
-	  color: #fff !important;
-	  font-weight: 900 !important;
-	  font-size: 15px !important;
-	  text-transform: none !important;
-  }
-  footer i{
-	  font-size: 20px !important;
-	  color: #242A6C;
-	  background-color: #fff;
-	  border-radius: 5px;
-	  padding: 8px;
-	  margin-right: .6em;
-  }
-  .footer-copyright p{
-	  color: #fff !important;
-	  font-size: 15px;
-  }
-  
-  /* ====== Pages ====== */
-  /* ====== Homepage ====== */
-  /* --- Self-Directed Solutions --- */
-  .self-directed-solutions .so-widget-sow-tabs-default-b20a371c4832-50486 .sow-tabs .sow-tabs-tab-container .sow-tabs-tab {
-	  font-size: 12px;
-  }
-  .self-directed-solutions .so-widget-sow-tabs-default-b20a371c4832-50486 .sow-tabs .sow-tabs-panel-container .sow-tabs-panel .sow-tabs-panel-content {
-		  font-size: 12px;
-  }
-  /* --- How IRA Financial Works --- */
-  .how-ira-works-image {
-			  display: none;
-	  }
-	  .how-ira-works-bullets,
-	  .how-ira-works-bullets h4 {
-		  color: #FFF;		
-	  }
-  .how-ira-works-bullets h4 {
-		  margin-bottom: 5px;		
-	  }
-  /* --- Never step foot in a bank --- */
-  .never-step-foot-bg {
-	  background-image: url("/wp-content/uploads/2021/03/bg-home-3-mobile.png");
-	  background-size: cover;
-  }
-  /* --- Our latest content --- */
-  .latest-content-module {
-	  margin-bottom: 0px;	
-  }
-  
-  .latest-content-subtitle {
-	  color: #FFFFFF;
-	  font-size: 18px;
-	  font-weight: 700;
-  }
-  
-  .latest-content-module-info {
-	  background-color: #fff;
-	border-radius: 10px 10px 10px 10px;
-  }
-  
-  .latest-content-module-info img {
-	  border-radius: 10px 10px 0 0;	
-  }
-  
-  .latest-content-link{
-	  padding: 0 18px 10px 18px;
-	  min-height: 130px;
-  }
-  
-  /* ====== Product Page ROBS ====== */
-  .robs-how-works {
-		  display: flex;
-	  flex-direction: column;
-  }	
-  .robs-how-works img {
-		  width: 172px;
-		  align-self: center;
-  }
-  
-  .robs-mobile-step {
-	  margin-bottom: 0;
-	  display: block;
-	  font-weight: 900;
-	  color: #4A51C7;
-	  font-size: 20px;
-  }
-	  
-  .robs-how-works h4 {
-		  margin-bottom: 0;
-	  font-size: 25px;
-	  font-weight: 600;
-	  color: #19254E;		
-  }
-  
-  .robs-how-works h4 span {
-	  display: none;	
-  }
-  
-  /* ====== Learn Pages ====== */
-  .learn-section{
-	  padding-bottom: 60px;
-  }
-  
-  .learn-article{
-	  max-width: 90%;
-  }
-  
-  /* ====== Pricing Page ====== */
-  #price-columns {
-	  flex-wrap: wrap;
-  }
-  .pricing-boxes {
-	  box-shadow: 5px 8px 0 rgba(0.1, 0.1, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-	  max-width: 300px;
-	  /*min-width: 250px;*/
-	  margin: auto;
-  }
-  
-  .pricing-boxes-robs {
-	  margin: 42px auto auto auto;
-  }
-  
-  /* ====== Investments Page ====== */
-  #hotspot-49579 .hotspots-image-container, #hotspot-49579 .leaflet-container{
-	  background-color: rgba(255, 255, 255, 0) !important;
-  }
-  
-  /* ====== Testimonials Page ====== */
-  .testimonial-block p{
-	  color: #566382;
-	  font-size: 15px;
-  }
-  
-  /* ====== Info Kits Page ====== */
-  #info-kit-social-media i{
-	  font-size: 25px;
-	  color: #FF9D73 !important;
-	  margin-right: 10px;
-	  margin-top: 20px;
-  }
-  #info-kit-social-media a{
-	  font-size: 20px;
-	  margin-right: 20px;
-  }
-  .blog-info-kit-container{
-	  background-color: #F3F5F9;
-	  border-radius: 5px;
-	  padding: 15px 20px 0 20px;
-  }
-  .info-kit-image{
-	  display: inline-block;
-	  padding-right: 20px;
-  }
-  .info-kit-form{
-	  display: inline-block;
-	  max-width: 360px;
-  }
-  
-  /* ====== Landing Pages ====== */
-  /* --- LP Base Template / LP Template 1 --- */
-  #t1-nav-phone p{
-	  font-size: 20px;
-	  color: #fff;
-  }
-  #t1-nav-phone a{
-	  font-size: 20px;
-	  color: #fff;
-  }
-  .t1-header{
-	  background-color: rgba(243,245,249,0.85);
-	  padding: 5px 20px 15px 20px;
-	  border-radius: 5px;
-	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .t1-header p{
-	  font-size: 16px;
-  }
-  .t1-header-form #name{
-	  float: left;
-	  width: 49%;
-	  margin-right: 1%;
-  }
-  .t1-header-form #name input{
-	  font-size: 18px !important;
-	  margin-bottom: 17px;
-	  border-radius: 5px;
-  }
-  .t1-header-form #phone{
-	  float: left;
-	  width: 50%;
-  }
-  .t1-header-form #phone input{
-	  font-size: 18px !important;
-	  margin-bottom: 17px !important;
-	  border-radius: 5px;
-  }
-  .t1-header-form #email input{
-	  font-size: 18px !important;
-	  margin-bottom: 17px !important;
-	  border-radius: 5px;
-  }
-  .t1-header-form #button{
-	  border-radius: 20px;
-  }
-  .t1-footer-form #button{
-	  width: 100%;
-	  border-radius: 20px;
-  }
-  .lp-dropdown .vc_tta-panel{
-	  border-bottom: 1px solid #d5d5d5;
-  }
-  .lp-dropdown .vc_tta-panel-heading{
-	  background-color: #fff !important;
-  }
-  .lp-dropdown .vc_tta-panel-title a{
-	  color: #4A51C7 !important;
-  }
-  .vc_tta-color-white.vc_tta-style-flat:not(.vc_tta-o-no-fill) .vc_tta-panel-body{
-	  color: #19254E !important;
-  }
-  #lp-video-list ul{
-	  list-style: none;;
-  }
-  #lp-video-list li{
-		  background: url('https://www.irafinancialgroup.com/wp-content/uploads/2019/05/checkmark-0.png') no-repeat 0 5px;
-	  padding-left: 2.5em;
-	  background-size: 20px 20px;
-	  margin: 15px 0;
-  }
-  /* --- LP Template 2 --- */
-  .t2-header{
-	  background-color: #fff;
-	  padding: 5px 30px 15px 30px;
-	  border-radius: 5px;
-	  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .lp-testimonial{
-	  box-shadow: 5px 8px 0 rgba(0.1, 0.1, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-	  background-color: #fff;
-	  border-radius: 10px;
-	  padding: 7%;
-  }
-  .lp-testimonial p{
-	  color: #5c5c5c;
-	  font-size: 15px;
-  }
-  /* --- LP Template 3 --- */
-  .t3-header{
-	  background-color: rgba(245,245,245,0.85);
-	  padding: 5px 30px 15px 30px;
-	  border-radius: 5px;
-	  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  /* Blog Content & Typography */
-  .blog-special-content{
-	  background-color: #F3F5F9;
-	  border-radius: 5px;
-	  padding: 20px 20px 5px 20px;
-  }
-  .entry-content.entry--item p{
-	  font-size: 18px;
-	  line-height: 32px;
-  }
-  .entry-content.entry--item ul{
-	  font-size: 18px;
-	  color: #0D1732;
-	  line-height: 27px;
-  }
-  .entry-content.entry--item ol{
-	  font-size: 18px;
-	  color: #0D1732;
-	  line-height: 32px;
-  }
-  .entry-title.entry--item.h2{
-	  font-size: 40px;
-  }
-  .entry-content.entry--item h2{
-	  margin-top: 1.5em;
-	  line-height: 50px;
-  }
-  .entry-content.entry--item h3{
-	  margin-top: 1.5em;
-  }
-  .entry-content.entry--item a{
-	  font-weight: 900;
-  }
-  .entry-content li{
-	  margin-left: 1.5em;
-  }
-  .site-content .widget-title{
-	  font-weight: 600;
-	  text-transform: uppercase;
-	  margin-top: 40px;
-  }
-  .page-cover{
-	  background-color: #0D1732;
-	  margin-bottom: 7%;
-  }	
-  .entry--item.entry-related.related-grid.img-pos-top {
-	  padding-bottom: 5em;
-  }
-  .pagination{
-	  padding-bottom: 5em;
-  }
-  .pagination .nav-links span{
-	  background: #0D1732;
-	  border-color: #0D1732;
-  }
-  .heateor_sss_sharing_container.heateor_sss_horizontal_sharing{
-	  margin-top: 2em;
-  }
-  .related-post-title{
-	  border-top: 1px solid #dddddd;
-	  padding-top: 1em;
-	  margin-bottom: 1em;
-  }
-  .posts-layout .entry-inner{
-	  border-radius: 5px;
-	  padding: 20px;
-	  border-bottom: 0;
-	  box-shadow: 2px 5px 8px 0 rgba(184, 190, 202, .4), 0 6px 20px 0 rgba(184, 190, 202, .4);
-	  background-color: #fff;
-	  margin-bottom: 40px;
-  }
-  .keypoints-header{
-	  font-size: 20px;
-	  font-weight: 900;
-  }
-  .keypoints{
-	  font-weight: 600;
-	  padding: 20px 35px 15px 35px;
-	  border-radius: 10px;
-	  margin: 30px 0 50px 0;
-	  background-color: #F3F5F9;
-  }
-  
-  /* Blog Sidebar */
-  .rt-reading-time {
-  font: bold 16px sans-serif;
-  color: #4A51C7;
-  margin-bottom: 15px;
-  }
-  .sidebar-primary a{
-	  font-weight: bold;
-	  font-size: 19px;
-	  line-height: 19px;
-	  margin-bottom: 25px !important;
-  }
-  input.search-field{
-	  border: 1px solid #B8BECA;
-	  box-shadow: none;
-	  border-radius: 3px;
-  }
-  select{
-	  border-radius: 3px;
-  }
-  .widget-area .widget .sidebar-search-form .search-submit{
-	  color: #B8BECA;
-  }
-  .sidebar-primary .widget-title{
-	  text-transform: capitalize !important;
-	  color: #fff;
-	  background-color: #4A51C7;
-	  padding: 5px;
-	  border-radius: 3px;
-	  margin-top: 45px;
-  }
-  .sidebar-primary iframe{
-	  width: 100%;
-	  max-width: 400px;
-	  height: 190px;
-  }
-  .sidebar-primary img{
-	  width: 100%;
-	  max-width: 400px;
-  }
-  
-  /* ========== Desktop/Tablet ========= */
-  @media only screen and (min-width: 768px) {
-	  .robs-how-works {
-		  background-color: transparent;	
-	  }
-	  .robs-how-works img {
-		  width: 87px;
-		  align-self: auto;
-	  }
-	  .robs-mobile-step {
-			  display: none;
-	  }
-	  .robs-how-works h4 {
-		  font-weight: 700;
-	  color: #19254E;
-	  font-size: 20px;	
-	  }
-		  
-	  .robs-how-works h4 span {
-		  display: inline;	
-	  }
-	  
-	  /* ====== Homepage ====== */
-	  /* --- How IRA Financial Works --- */
-	  .how-ira-works-head {
-	  max-width: 480px;		
-	  }
-	  .how-ira-works-image {
-		  display: block;
-	  min-width: 70%;
-	  margin: 0 auto;			
-	  }
-	  .how-ira-works-bullets {
-		  display: none;	
-	  }
-	  /* --- Never step foot in a bank --- */
-	  .never-step-foot-bg {
-	  background-image: url("/wp-content/uploads/2021/03/bg-home-0.png");
-	  background-size: cover;
-	  }
-	  /* --- Our latest content --- */
-	  .latest-content-module {
-		  margin-bottom: 0;	
-	  }
-  }
-  
-	  /* ====== Blog ====== */
-	  @media only screen and (max-width: 1000px){
-		  .page-cover-title{
-		  background-color: rgba(13, 23, 50, .7);
-		  padding: 5px;
-		  }
-	  }
-  
-	  /* ====== Contact Form ====== */
-	  @media only screen and (min-width: 1060px) {
-		  .form-name{
-			  float: left;
-			  width: 49%;
-			  margin-right: 9px;
-		  }
-		  .form-phone{
-			  float: left;
-			  width: 49%
-		  }
-		  .form-date{
-			  float: left;
-			  width: 30%;
-			  margin-right: 9px;
-		  }
-		  .form-time{
-			  float: left;
-			  width: 68%;
-		  }
-	  }
-  
-  /* ========== Misc. Elements ========= */
-  /* --- SDIRA Compliance Services --- */
-  .sdira-compliance-service-comparison th, td {
-	border-bottom: 1px solid #4A51C7;
-	  border-right: 1px solid #4A51C7;
-  }
-  .sdira-compliance-service-comparison tr:last-child td {
-	  border-bottom: none;
-  }
-  .sdira-compliance-service-comparison td{
-	  background-color: #fff;
-  }
-  .sdira-compliance-service-comparison th{
-	  background-color: #fff;
-	  text-align: center;
-	  font-size: 20px;
-	  color: #4A51C7;
-	  font-weight: bold;
-  }
-  .sdira-compliance-service-comparison td:nth-child(1){
-	  background-color: #fff;
-  }
-  .sdira-compliance-service-comparison td:nth-child(2){
-	  background-color: #F3F5F9;
-	  color: #4A51C7;
-	  text-align: center;
-  }
-  .sdira-compliance-service-comparison td:nth-child(3){
-	  background-color: #F3F5F9;
-	  color: #4A51C7;
-	  text-align: center;
-  }
-  /* --- Fadeup Animation --- */
-  @keyframes fadeInUp {
-	  from {
-		  transform: translate3d(0,40px,0)
-	  }
-  
-	  to {
-		  transform: translate3d(0,0,0);
-		  opacity: 1
-	  }
-  }
-  @-webkit-keyframes fadeInUp {
-	  from {
-		  transform: translate3d(0,40px,0)
-	  }
-  
-	  to {
-		  transform: translate3d(0,0,0);
-		  opacity: 1
-	  }
-  }
-  .animated {
-	  animation-duration: 2s;
-	  animation-fill-mode: both;
-	  -webkit-animation-duration: 2s;
-	  -webkit-animation-fill-mode: both
-  }
-  .animatedFadeInUp {
-	  opacity: 0
-  }
-  
-  .fadeInUp {
-	  opacity: 0;
-	  animation-name: fadeInUp;
-	  -webkit-animation-name: fadeInUp;
-  }
-  @media only screen and (max-width: 480px){
-	  .mobile-no-display{
-		  display: none;
-	  }
-  }
-  /* --- App Video Image --- */
-  .app-video-image img{
-	  max-width: 300px;
-  }
-  /* --- SiteOrigin Accordion --- */
-  .sow-accordion-panel{
-	  margin-bottom: 0 !important;
-  }
-  /* --- White Shadow Box Background --- */
-  .shadow-box-white{
-	  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.08);
-	  background-color: #fff;
-	  border-radius: 10px;
-	  padding: 7%;
-  }
-  /* --- Popup --- */
-  .black-friday-popup{
-	  background: #fff !important;
-	  padding: 15px 15px 0 15px;
-	  max-width: 600px !important;
-  }
-  .black-friday-popup .bf-contact{
-	  width: 95%;
-	  margin: 2px;
-  }
-  .bf-contact .wpcf7-form-control.wpcf7-submit {
-	  background: #3560CF !important;
-  }
-  /* --- Sprites --- */
-  .bg-Icon_material_person {
-	  width: 25px; height: 25px;
-	  background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -40px -4px;
-		  background-size: 70px;
-  }
-  .bg-Icon_awesome_unlock_alt {
-	  width: 25px; height: 25px;
-	  background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -35px -36px;
-	  background-size: 70px;
-  }
-  .bg-Icon_awesome_store {
-	  width: 28px; height: 25px;
-	  background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -5px -5px;
-		  background-size: 70px;
-  }
-  .bg-Icon_awesome_shapes {
-	  width: 25px; height: 25px;
-	  background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -4px -37px;
-		  background-size: 70px;
-  }
-  /* --- Contact Form --- */
-  form{
-	  margin-bottom: -5px;
-  }
-  .wpcf7 input{
-	  font-size: 15px !important;
-	  font-weight: 300;
-	  margin-bottom: 17px !important;
-	  border-radius: 5px;
-	  box-shadow: none;
-	  border: 1px solid #B8BECA;
-  }
-  .wpcf7 textarea{
-	  font-size: 15px;
-	  min-height: 80px;
-	  margin-bottom: 20px;
-	  border-radius: 3px;
-  }
-  .wpcf7-form-control.wpcf7-submit {
-	  width: 100%;
-	  background: #0D1732 !important;
-	  font-weight: 900 !important;
-	  padding: 1% 2% !important;
-	  border-radius: 5px !important;
-	  margin-bottom: 0 !important;
-	  text-transform: capitalize !important;
-  }
-  .post-16744 .wpcf7-submit{
-	  background-color: #4A51C7 !important;
-  }
-  .post-5951 .wpcf7-submit{
-	  background-color: #4A51C7 !important;
-  }
-  div.wpcf7-response-output {
-		  color: #Fff !important;
-	  margin: 0 0.5em 1em .5em !important;
-  }
-  .acceptance-form input{
-	  margin-bottom: 0 !important;
-  }
-  .TermsAcceptance{
-	  margin-left: -16px !important;
-  }
-  .form-text-light{
-	  color: #fff;
-	  font-weight: 600;
-  }
-  
-  /* ====== Pricing ====== */
-  #price-columns {
-	  flex-wrap: wrap;
-  }
-  
-  #price-columns .panel-grid-cell {
-	  width: 100%;	
-  }
-  
-  @media only screen and (min-width: 768px) {
-		  #price-columns {
-			  padding-top: 10px;	
-		  }
-	  #price-columns	.panel-grid-cell {
-	  width: 50%;	
-			  margin-bottom: 30px;
-  }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-	  #price-columns .panel-grid-cell {
-		  width: 25%;
-		  width: calc(25% - ( 0.75 * 30px ) );
-  }
-  }
-  
-  /* ====== Partners ====== */
-  .partners-header {
-		  text-align: center;	
-  }
-  .partners-header img {
-	  width: 370px;	
-  }
-  .partner {
-		  padding: 0 15px 15px;
-  }
-  
-  .partner .logo {
-		  border-bottom: solid 1px #cbcbcb;
-	  padding: 0 15px 15px;
-	  margin-bottom: 15px;
-  }
-  
-  .partner .logo img {
-	  width: 150px;
-  }
-  
-  .partner .logo.oanda img {
-	  width: 180px;	
-  }
-  
-  .partner .logo.equifund img {
-	  width: 200px;	
-  }
-  
-  .partner .logo.capital_market img {
-	  width: 230px;	
-  }
-  
-  .partner .parter_name {
-		  padding: 0 15px;
-	  font-weight: 500;
-	  margin-bottom: 10px;
-  }
-  
-  
-  .partner .parter_info {
-			  padding: 0 15px 15px;
-  }
-  
-  .partners_solo_logos {
-		  display: flex;
-		  flex-wrap: wrap;
-		  padding: 0 30px;
-  }
-  
-  .partners_solo_logos .logo {
-	  width: 50%;
-		  margin-bottom: 60px;
-  }
-  
-  .partners_solo_logos .logo img {
-	  width: 50%;	
-  }
-  
-  /* ====== Team Page ====== */
-  .team_member:hover .photo_hover {
-	  opacity: 1;		
-  }
-  
-  .team_member__photo {
-	  position: relative;
-	  margin-bottom: 16px;
-  }
-  
-  .team_member__photo .photo_hover {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  opacity: 0;
-	  transition: all 0.3s ease-in-out;
-  }
-  
-  .team_member__name {
-		  margin-bottom: 0;
-  }
-  
-  .team_member__position {
-	  margin-bottom: 12px;
-	  font-size: 14px;
-  }
-  
-  .team_member__profile {
-	  font-size: 14px;
-  }
-  
-  .team_member__contact a {
-	  display: inline-block;
-	  margin-right: 12px;
-  }
-  
-  /* ====== Careers Page ====== */
-  .position {
-		  display: block;
-		  padding: 20px;
-	  border: solid 1px #ececec;
-	  border-radius: 8px;
-		  color: #0E1730;
-  }
-  
-  .position:hover {
-	  border-color: #1e4b75;	
-  }
-  
-  p.position-field {
-	  margin-bottom: 0px;
-	  font-size: 12px;
-  }
-  p.position-name {
-	  font-weight: bold;
-		  color: #5964fe;
-  }
-  
-  ul.position-details {
-	  list-style: none;
-		  margin-bottom: 0;
-  }
-  
-  ul.position-details li {
-	  margin-left: 0;
-		  font-size: 12px;
-  }
-  
-  ul.position-details span {
-	  display: inline-block;
-		  width: 20px;
-		  margin-right: 5px;
-	  text-align: center;
-		  vertical-align: middle;
-  }
-  
-  span.location img {
-	  width: 10px;
-  }
-  
-  span.time img {
-	  width: 13px;
-  }
-  
-  .position-detail-header h3 {
-	  color: #FFF;	
-  }
-  
-  .position-detail-header ul {
-	  color: #FFF;	
-  }
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+/*@font-face {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+body{
+	color: #19254E;
+	font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	color: #19254E;
+	font-weight: 700;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 35px;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 20px;
+}
+ul, ol{
+	font-size: 16px;
+	color: #344060;
+}
+.main-subheader{
+	font-size: 27px;
+}
+.secondary-text{
+	font-size: 14px;
+}
+.team-titles-group{
+	font-size: 14px;
+}
+.team-titles-trust{
+	font-size: 14px;
+}
+.heading-left-line{
+	border-left: 3px solid #4A51C7; 
+	padding-left: 20px;
+}
+.half-highlight-blue{
+	background-image: linear-gradient( to bottom,transparent,transparent 68%,rgba(89, 100, 254, .8) 68%,rgba(89, 100, 254, .8) )
+}
+.entry-content .list-checkmark li{
+	margin-left: 0 !important;
+}
+.list-checkmark ul{
+	list-style: none;
+}
+.list-checkmark li{
+	background: url('https://www.irafinancialgroup.com/wp-content/uploads/2020/06/checkmark-blue-0.png') no-repeat 0 5px;
+	padding-left: 2.5em;
+	background-size: 17px 17px;
+	margin: 10px 0;
+}
+.list-checkmark-white li{
+		margin-left: 0 !important;
+}
+.list-checkmark-white ul{
+	list-style: none;
+}
+.list-checkmark-white li{
+	background: url('https://www.irafinancialgroup.com/wp-content/uploads/2021/04/checkmark-white.png') no-repeat 0 5px;
+	padding-left: 2.5em;
+	background-size: 18px 18px;
+	margin: 10px 0;
+}
+#services-list ul{
+	list-style: none;
+}
+#services-list li{
+	background: url('https://www.irafinancialgroup.com/wp-content/uploads/2019/05/checkmark-0.png') no-repeat 0 5px;
+	padding-left: 2.5em;
+	background-size: 20px 20px;
+	margin: 15px 0;
+}
+
+/* Links & Buttons */
+a{
+	color: #5964fe;
+}
+a:hover{
+	color: #2C338D;
+}
+.ow-button-base a{
+	font-size: 1em !important;
+	border: none;
+}
+.a-button{
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 40px;
+	background-color: #5964fe;
+	font-weight: 700;
+	border: none;
+}
+.a-button:hover{
+	color: #fff;
+	background-color: #2C338D;
+	border: none;
+}
+.a-button:visited, .a-button-1:visited{
+	color: #fff;
+}
+.learn-link{
+	font-size: 28px;
+}
+.learn-link a{
+	color: #252636;
+}
+.learn-link a:hover{
+	color: #4A51C7;
+}
+.self-directed-solutions-tab :focus {
+outline: none;
+}
+
+/* ====== Cover Pages ====== */
+.cover_page{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #0E1730;
+	color: #FFFFFF;	
+}
+
+.cover_page .cover_page__title {
+	color: #FFFFFF;
+}
+
+.cover_page .cover_page__subtitle {
+	font-size: 27px;	
+}
+
+.cover_page .cover_page__illustration {
+		text-align: center;	
+}
+.cover_page .cover_page__illustration.our_team {
+	width: 370px;	
+}
+
+/* ====== Navigation & Footer ====== */
+/* --- Navigation --- */
+.dark-mode .item--html a {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+}
+#header-menu-sidebar-bg .login-link{
+	font-weight: 700;
+}
+.nav-pricing a{
+	color: #5CD984 !important;
+}
+
+.site-header .site-branding img {
+	width: 95px;
+	height: 36px;
+}
+/* --- Footer --- */
+.footer-top textarea{
+	margin-bottom: 18px !important;
+}
+#cb-row--footer-top .footer--row-inner{
+	padding: 80px 0 80px 0;
+	background: linear-gradient(90deg, rgba(89,100,254,1) 3%, rgba(88,29,181,1) 100%);
+}
+#cb-row--footer-main .footer--row-inner{
+	padding-top: 4em;
+	background: #0D1732;
+}
+#cb-row--footer-main p, #cb-row--footer-main a{
+	font-size: 15px;
+	color: #fff;
+}
+#cb-row--footer-bottom .footer-bottom-inner{
+	background-color: #0D1732;
+	font-size: 15px;
+	color: #fff;
+}
+footer h4{
+	color: #fff !important;
+	font-weight: 900 !important;
+	font-size: 15px !important;
+	text-transform: none !important;
+}
+footer i{
+	font-size: 20px !important;
+	color: #242A6C;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 8px;
+	margin-right: .6em;
+}
+.footer-copyright p{
+	color: #fff !important;
+	font-size: 15px;
+}
+
+/* ====== Pages ====== */
+/* ====== Homepage ====== */
+/* --- Self-Directed Solutions --- */
+.self-directed-solutions .so-widget-sow-tabs-default-b20a371c4832-50486 .sow-tabs .sow-tabs-tab-container .sow-tabs-tab {
+	font-size: 12px;
+}
+.self-directed-solutions .so-widget-sow-tabs-default-b20a371c4832-50486 .sow-tabs .sow-tabs-panel-container .sow-tabs-panel .sow-tabs-panel-content {
+		font-size: 12px;
+}
+/* --- How IRA Financial Works --- */
+.how-ira-works-image {
+			display: none;
+	}
+	.how-ira-works-bullets,
+	.how-ira-works-bullets h4 {
+		color: #FFF;		
+	}
+.how-ira-works-bullets h4 {
+		margin-bottom: 5px;		
+	}
+/* --- Never step foot in a bank --- */
+.never-step-foot-bg {
+	background-image: url("/wp-content/uploads/2021/03/bg-home-3-mobile.png");
+	background-size: cover;
+}
+/* --- Our latest content --- */
+.latest-content-module {
+	margin-bottom: 0px;	
+}
+
+.latest-content-subtitle {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.latest-content-module-info {
+	background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.latest-content-module-info img {
+	border-radius: 10px 10px 0 0;	
+}
+
+.latest-content-link{
+	padding: 0 18px 10px 18px;
+	min-height: 130px;
+}
+
+/* ====== Product Page ROBS ====== */
+.robs-how-works {
+		display: flex;
+    flex-direction: column;
+}	
+.robs-how-works img {
+		width: 172px;
+		align-self: center;
+}
+
+.robs-mobile-step {
+    margin-bottom: 0;
+    display: block;
+    font-weight: 900;
+    color: #4A51C7;
+    font-size: 20px;
+}
+    
+.robs-how-works h4 {
+		margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #19254E;		
+}
+
+.robs-how-works h4 span {
+	display: none;	
+}
+
+/* ====== Learn Pages ====== */
+.learn-section{
+	padding-bottom: 60px;
+}
+
+.learn-article{
+	max-width: 90%;
+}
+
+/* ====== Pricing Page ====== */
+#price-columns {
+	flex-wrap: wrap;
+}
+.pricing-boxes {
+	box-shadow: 5px 8px 0 rgba(0.1, 0.1, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	max-width: 300px;
+	/*min-width: 250px;*/
+	margin: auto;
+}
+
+.pricing-boxes-robs {
+	margin: 42px auto auto auto;
+}
+
+/* ====== Investments Page ====== */
+#hotspot-49579 .hotspots-image-container, #hotspot-49579 .leaflet-container{
+	background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* ====== Testimonials Page ====== */
+.testimonial-block p{
+	color: #566382;
+	font-size: 15px;
+}
+
+/* ====== Info Kits Page ====== */
+#info-kit-social-media i{
+	font-size: 25px;
+	color: #FF9D73 !important;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#info-kit-social-media a{
+	font-size: 20px;
+	margin-right: 20px;
+}
+.blog-info-kit-container{
+	background-color: #F3F5F9;
+	border-radius: 5px;
+	padding: 15px 20px 0 20px;
+}
+.info-kit-image{
+	display: inline-block;
+	padding-right: 20px;
+}
+.info-kit-form{
+	display: inline-block;
+	max-width: 360px;
+}
+
+/* ====== Landing Pages ====== */
+/* --- LP Base Template / LP Template 1 --- */
+#t1-nav-phone p{
+	font-size: 20px;
+	color: #fff;
+}
+#t1-nav-phone a{
+	font-size: 20px;
+	color: #fff;
+}
+.t1-header{
+	background-color: rgba(243,245,249,0.85);
+	padding: 5px 20px 15px 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.t1-header p{
+	font-size: 16px;
+}
+.t1-header-form #name{
+	float: left;
+	width: 49%;
+	margin-right: 1%;
+}
+.t1-header-form #name input{
+	font-size: 18px !important;
+	margin-bottom: 17px;
+	border-radius: 5px;
+}
+.t1-header-form #phone{
+	float: left;
+	width: 50%;
+}
+.t1-header-form #phone input{
+	font-size: 18px !important;
+	margin-bottom: 17px !important;
+	border-radius: 5px;
+}
+.t1-header-form #email input{
+	font-size: 18px !important;
+	margin-bottom: 17px !important;
+	border-radius: 5px;
+}
+.t1-header-form #button{
+	border-radius: 20px;
+}
+.t1-footer-form #button{
+	width: 100%;
+	border-radius: 20px;
+}
+.lp-dropdown .vc_tta-panel{
+	border-bottom: 1px solid #d5d5d5;
+}
+.lp-dropdown .vc_tta-panel-heading{
+	background-color: #fff !important;
+}
+.lp-dropdown .vc_tta-panel-title a{
+	color: #4A51C7 !important;
+}
+.vc_tta-color-white.vc_tta-style-flat:not(.vc_tta-o-no-fill) .vc_tta-panel-body{
+	color: #19254E !important;
+}
+#lp-video-list ul{
+	list-style: none;;
+}
+#lp-video-list li{
+		background: url('https://www.irafinancialgroup.com/wp-content/uploads/2019/05/checkmark-0.png') no-repeat 0 5px;
+	padding-left: 2.5em;
+	background-size: 20px 20px;
+	margin: 15px 0;
+}
+/* --- LP Template 2 --- */
+.t2-header{
+	background-color: #fff;
+	padding: 5px 30px 15px 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.lp-testimonial{
+	box-shadow: 5px 8px 0 rgba(0.1, 0.1, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 7%;
+}
+.lp-testimonial p{
+	color: #5c5c5c;
+	font-size: 15px;
+}
+/* --- LP Template 3 --- */
+.t3-header{
+	background-color: rgba(245,245,245,0.85);
+	padding: 5px 30px 15px 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Blog Content & Typography */
+.blog-special-content{
+	background-color: #F3F5F9;
+	border-radius: 5px;
+	padding: 20px 20px 5px 20px;
+}
+.entry-content.entry--item p{
+	font-size: 18px;
+	line-height: 32px;
+}
+.entry-content.entry--item ul{
+	font-size: 18px;
+	color: #0D1732;
+	line-height: 27px;
+}
+.entry-content.entry--item ol{
+	font-size: 18px;
+	color: #0D1732;
+	line-height: 32px;
+}
+.entry-title.entry--item.h2{
+	font-size: 40px;
+}
+.entry-content.entry--item h2{
+	margin-top: 1.5em;
+	line-height: 50px;
+}
+.entry-content.entry--item h3{
+	margin-top: 1.5em;
+}
+.entry-content.entry--item a{
+	font-weight: 900;
+}
+.entry-content li{
+	margin-left: 1.5em;
+}
+.site-content .widget-title{
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+.page-cover{
+	background-color: #0D1732;
+	margin-bottom: 7%;
+}	
+.entry--item.entry-related.related-grid.img-pos-top {
+	padding-bottom: 5em;
+}
+.pagination{
+	padding-bottom: 5em;
+}
+.pagination .nav-links span{
+	background: #0D1732;
+	border-color: #0D1732;
+}
+.heateor_sss_sharing_container.heateor_sss_horizontal_sharing{
+	margin-top: 2em;
+}
+.related-post-title{
+	border-top: 1px solid #dddddd;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+.posts-layout .entry-inner{
+	border-radius: 5px;
+	padding: 20px;
+	border-bottom: 0;
+	box-shadow: 2px 5px 8px 0 rgba(184, 190, 202, .4), 0 6px 20px 0 rgba(184, 190, 202, .4);
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+.keypoints-header{
+	font-size: 20px;
+	font-weight: 900;
+}
+.keypoints{
+	font-weight: 600;
+	padding: 20px 35px 15px 35px;
+	border-radius: 10px;
+	margin: 30px 0 50px 0;
+	background-color: #F3F5F9;
+}
+
+/* Blog Sidebar */
+.rt-reading-time {
+font: bold 16px sans-serif;
+color: #4A51C7;
+margin-bottom: 15px;
+}
+.sidebar-primary a{
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 19px;
+	margin-bottom: 25px !important;
+}
+input.search-field{
+	border: 1px solid #B8BECA;
+	box-shadow: none;
+	border-radius: 3px;
+}
+select{
+	border-radius: 3px;
+}
+.widget-area .widget .sidebar-search-form .search-submit{
+	color: #B8BECA;
+}
+.sidebar-primary .widget-title{
+	text-transform: capitalize !important;
+	color: #fff;
+	background-color: #4A51C7;
+	padding: 5px;
+	border-radius: 3px;
+	margin-top: 45px;
+}
+.sidebar-primary iframe{
+	width: 100%;
+	max-width: 400px;
+	height: 190px;
+}
+.sidebar-primary img{
+	width: 100%;
+	max-width: 400px;
+}
+
+/* ========== Desktop/Tablet ========= */
+@media only screen and (min-width: 768px) {
+	.robs-how-works {
+		background-color: transparent;	
+	}
+	.robs-how-works img {
+		width: 87px;
+		align-self: auto;
+	}
+	.robs-mobile-step {
+			display: none;
+	}
+	.robs-how-works h4 {
+		font-weight: 700;
+    color: #19254E;
+    font-size: 20px;	
+	}
+		
+	.robs-how-works h4 span {
+		display: inline;	
+	}
+	
+	/* ====== Homepage ====== */
+	/* --- How IRA Financial Works --- */
+	.how-ira-works-head {
+	max-width: 480px;		
+	}
+	.how-ira-works-image {
+		display: block;
+    min-width: 70%;
+    margin: 0 auto;			
+	}
+	.how-ira-works-bullets {
+		display: none;	
+	}
+	/* --- Never step foot in a bank --- */
+	.never-step-foot-bg {
+	background-image: url("/wp-content/uploads/2021/03/bg-home-0.png");
+	background-size: cover;
+	}
+	/* --- Our latest content --- */
+	.latest-content-module {
+		margin-bottom: 0;	
+	}
+}
+
+	/* ====== Blog ====== */
+	@media only screen and (max-width: 1000px){
+		.page-cover-title{
+		background-color: rgba(13, 23, 50, .7);
+		padding: 5px;
+		}
+	}
+
+	/* ====== Contact Form ====== */
+	@media only screen and (min-width: 1060px) {
+		.form-name{
+			float: left;
+			width: 49%;
+			margin-right: 9px;
+		}
+		.form-phone{
+			float: left;
+			width: 49%
+		}
+		.form-date{
+			float: left;
+			width: 30%;
+			margin-right: 9px;
+		}
+		.form-time{
+			float: left;
+			width: 68%;
+		}
+	}
+
+/* ========== Misc. Elements ========= */
+/* --- SDIRA Compliance Services --- */
+.sdira-compliance-service-comparison th, td {
+  border-bottom: 1px solid #4A51C7;
+	border-right: 1px solid #4A51C7;
+}
+.sdira-compliance-service-comparison tr:last-child td {
+	border-bottom: none;
+}
+.sdira-compliance-service-comparison td{
+	background-color: #fff;
+}
+.sdira-compliance-service-comparison th{
+	background-color: #fff;
+	text-align: center;
+	font-size: 20px;
+	color: #4A51C7;
+	font-weight: bold;
+}
+.sdira-compliance-service-comparison td:nth-child(1){
+	background-color: #fff;
+}
+.sdira-compliance-service-comparison td:nth-child(2){
+	background-color: #F3F5F9;
+	color: #4A51C7;
+	text-align: center;
+}
+.sdira-compliance-service-comparison td:nth-child(3){
+	background-color: #F3F5F9;
+	color: #4A51C7;
+	text-align: center;
+}
+/* --- Fadeup Animation --- */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+@media only screen and (max-width: 480px){
+	.mobile-no-display{
+		display: none;
+	}
+}
+/* --- App Video Image --- */
+.app-video-image img{
+	max-width: 300px;
+}
+/* --- SiteOrigin Accordion --- */
+.sow-accordion-panel{
+	margin-bottom: 0 !important;
+}
+/* --- White Shadow Box Background --- */
+.shadow-box-white{
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.08);
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 7%;
+}
+/* --- Popup --- */
+.black-friday-popup{
+	background: #fff !important;
+	padding: 15px 15px 0 15px;
+	max-width: 600px !important;
+}
+.black-friday-popup .bf-contact{
+	width: 95%;
+	margin: 2px;
+}
+.bf-contact .wpcf7-form-control.wpcf7-submit {
+	background: #3560CF !important;
+}
+/* --- Sprites --- */
+.bg-Icon_material_person {
+    width: 25px; height: 25px;
+    background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -40px -4px;
+		background-size: 70px;
+}
+.bg-Icon_awesome_unlock_alt {
+    width: 25px; height: 25px;
+    background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -35px -36px;
+	background-size: 70px;
+}
+.bg-Icon_awesome_store {
+    width: 28px; height: 25px;
+    background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -5px -5px;
+		background-size: 70px;
+}
+.bg-Icon_awesome_shapes {
+    width: 25px; height: 25px;
+    background: url('/wp-content/uploads/2021/06/solutions_css_sprites.png') -4px -37px;
+		background-size: 70px;
+}
+/* --- Contact Form --- */
+form{
+	margin-bottom: -5px;
+}
+.wpcf7 input{
+	font-size: 15px !important;
+	font-weight: 300;
+	margin-bottom: 17px !important;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 1px solid #B8BECA;
+}
+.wpcf7 textarea{
+	font-size: 15px;
+	min-height: 80px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+.wpcf7-form-control.wpcf7-submit {
+	width: 100%;
+	background: #0D1732 !important;
+	font-weight: 900 !important;
+	padding: 1% 2% !important;
+	border-radius: 5px !important;
+	margin-bottom: 0 !important;
+	text-transform: capitalize !important;
+}
+.post-16744 .wpcf7-submit{
+	background-color: #4A51C7 !important;
+}
+.post-5951 .wpcf7-submit{
+	background-color: #4A51C7 !important;
+}
+div.wpcf7-response-output {
+		color: #Fff !important;
+    margin: 0 0.5em 1em .5em !important;
+}
+.acceptance-form input{
+	margin-bottom: 0 !important;
+}
+.TermsAcceptance{
+	margin-left: -16px !important;
+}
+.form-text-light{
+	color: #fff;
+	font-weight: 600;
+}
+
+/* ====== Pricing ====== */
+#price-columns {
+	flex-wrap: wrap;
+}
+
+#price-columns .panel-grid-cell {
+	width: 100%;	
+}
+
+@media only screen and (min-width: 768px) {
+		#price-columns {
+			padding-top: 10px;	
+		}
+	#price-columns	.panel-grid-cell {
+	width: 50%;	
+			margin-bottom: 30px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+	#price-columns .panel-grid-cell {
+		width: 25%;
+		width: calc(25% - ( 0.75 * 30px ) );
+}
+}
+
+/* ====== Partners ====== */
+.partners-header {
+		text-align: center;	
+}
+.partners-header img {
+	width: 370px;	
+}
+.partner {
+		padding: 0 15px 15px;
+}
+
+.partner .logo {
+		border-bottom: solid 1px #cbcbcb;
+    padding: 0 15px 15px;
+    margin-bottom: 15px;
+}
+
+.partner .logo img {
+	width: 150px;
+}
+
+.partner .logo.oanda img {
+	width: 180px;	
+}
+
+.partner .logo.equifund img {
+	width: 200px;	
+}
+
+.partner .logo.capital_market img {
+	width: 230px;	
+}
+
+.partner .parter_name {
+		padding: 0 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.partner .parter_info {
+		    padding: 0 15px 15px;
+}
+
+.partners_solo_logos {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 30px;
+}
+
+.partners_solo_logos .logo {
+	width: 50%;
+		margin-bottom: 60px;
+}
+
+.partners_solo_logos .logo img {
+	width: 50%;	
+}
+
+/* ====== Team Page ====== */
+.team_member:hover .photo_hover {
+	opacity: 1;		
+}
+
+.team_member__photo {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.team_member__photo .photo_hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.team_member__name {
+		margin-bottom: 0;
+}
+
+.team_member__position {
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+.team_member__profile {
+	font-size: 14px;
+}
+
+.team_member__contact a {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.team_partners {
+	text-align: center;
+}
+
+.team_partners h2,
+.team_partners p {
+	margin-bottom: 0px;
+}
+
+.team_partners p {
+	font-size: 20px;
+	color: #7e7e7e;	
+}
+
+.partners_logos {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul.partners_logos li {
+	width: 50%;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+ul.partners_logos li img {
+	width: 85%;	
+}
+
+@media only screen and (min-width: 768px) {
+	ul.partners_logos li {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+			
+}
+
+/* ====== Careers Page ====== */
+.position {
+		display: block;
+		padding: 20px;
+    border: solid 1px #ececec;
+    border-radius: 8px;
+		color: #0E1730;
+}
+
+.position:hover {
+	border-color: #1e4b75;	
+}
+
+p.position-field {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+p.position-name {
+    font-weight: bold;
+		color: #5964fe;
+}
+
+ul.position-details {
+    list-style: none;
+		margin-bottom: 0;
+}
+
+ul.position-details li {
+    margin-left: 0;
+		font-size: 12px;
+}
+
+ul.position-details span {
+    display: inline-block;
+		width: 20px;
+		margin-right: 5px;
+    text-align: center;
+		vertical-align: middle;
+}
+
+span.location img {
+    width: 10px;
+}
+
+span.time img {
+    width: 13px;
+}
+
+.position-detail-header h3 {
+	color: #FFF;	
+}
+
+.position-detail-header ul {
+	color: #FFF;	
+}
+
+.apply_btn {
+	margin: 18px 0 0 0;
+	cursor: pointer;	
+}
+
+.form_container {
+	padding-bottom: 50px;		
+}
+
+#submit_form_anchor {
+	scroll-margin-top: 50px;	
+}
