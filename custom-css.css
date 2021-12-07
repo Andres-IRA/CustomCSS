@@ -155,25 +155,66 @@ outline: none;
 }
 
 /* ====== Cover Pages ====== */
-.cover_page{
-	padding-top: 30px;
-	padding-bottom: 10px;
+.cover-page{
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: #0E1730;
-	color: #FFFFFF;	
+}
+.cover-page h1,
+.cover-page h2,
+.cover-page p {
+	color: #FFF;	
 }
 
-.cover_page .cover_page__title {
+.cover-page h1 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+.cover-page h2 {
+	font-size: 2em;
+}
+
+.cover-page p {
+	font-size: 1.5em;
+	line-height: 1.35em;
+}
+
+.cover-page_nav {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+}
+
+.cover-page_nav a {
+	margin-right: 10px;	
+}
+
+@media only screen and (min-width: 768px) {
+		.cover-page h1 {
+		font-size: 3em;
+}
+	.cover-page p {
+	font-size: 1.7em;
+	line-height: 1.25em;
+}
+.cover-page_nav {
+		padding: 0;
+}
+}
+
+.cover-page .cover-page__title {
 	color: #FFFFFF;
 }
 
-.cover_page .cover_page__subtitle {
+.cover-page .cover-page__subtitle {
 	font-size: 27px;	
 }
 
-.cover_page .cover_page__illustration {
+.cover-page .cover-page__illustration {
 		text-align: center;	
 }
-.cover_page .cover_page__illustration.our_team {
+.cover-page .cover-page__illustration.our_team {
 	width: 370px;	
 }
 
